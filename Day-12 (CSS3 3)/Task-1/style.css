@@ -1,0 +1,61 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    margin:0 auto;
+    width: 90%;
+    height: 100vh;
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img{
+        max-width: 100%;
+    }
+
+    .player1,.player2{
+        width: 300px; 
+        position: absolute;
+        top:14%;
+    }
+    .player1{
+        left: 10%;
+    }
+    .player2{
+        right: 10%;
+    }
+    
+    .ball{
+        width: 70px;
+        height: 70px;
+        position: absolute;
+        left: 25%;
+        transform: translateY(-1rem);
+        animation: shoot 6s ease-out 1s infinite;
+    }
+}
+
+
+@keyframes shoot{
+    0%{
+        transform: translateX(0rem)  rotate(360deg);
+    }
+    15%{
+        transform: translateX(0rem)  rotate(740deg);
+    }
+    50%{
+        transform: translateX(43rem) rotate(0deg);
+    }
+    55%{
+        transform: translateX(42.5rem) rotate(0deg)
+    }
+    65%{
+        transform: translateX(42.5rem) rotate(0deg)
+    }
+    100%{
+        transform: translateX(0rem) rotate(360deg) ;
+    }
+}
