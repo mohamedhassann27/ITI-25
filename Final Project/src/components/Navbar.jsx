@@ -27,7 +27,7 @@ function Navbar() {
             {/*  */}
             <div className="flex items-center space-x-1 rtl:space-x-reverse">
                 {/* <img src="https://flowbite.com/docs/images/logo.svg" className="h-8" alt="Logo" /> */}
-                <img src="/public/imgs/admin/logo.png" className="w-12" alt="Logo" />
+                <img src="imgs/admin/logo.png" className="w-12" alt="Logo" />
                 <span className="self-center text-2xl max-md:text-xl max-md:-ml-2 font-semibold whitespace-nowrap text-[var(--secondary)]">Shoppire</span>
             </div>
 
@@ -102,3 +102,4 @@ function Navbar() {
 }
 
 export default Navbar
+
