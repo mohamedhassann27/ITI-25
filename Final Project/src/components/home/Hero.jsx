@@ -15,7 +15,7 @@ function Hero() {
                             </div>
                         </div>
                         <div className="h-full w-full flex-1">
-                            <img data-aos="zoom-out" src="/public/imgs/Hero/Hero-bg.png" alt="hero img" className='h-full w-full rounded-r-3xl object-cover' />
+                            <img data-aos="zoom-out" src="imgs/Hero/Hero-bg.png" alt="hero img" className='h-full w-full rounded-r-3xl object-cover' />
                         </div>
                     </div>
                 </div>
@@ -24,3 +24,4 @@ function Hero() {
 }
 
 export default Hero
+
