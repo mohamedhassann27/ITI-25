@@ -12,7 +12,7 @@ function About() {
                     <img
                         className=" w-full h-full rounded-3xl ml-10 object-cover max-md:w-fit max-md:mx-auto max-md:h-70"
                         // src="https://pagedone.io/asset/uploads/1717742431.png"
-                        src="/public/imgs/Hero/about1.png"
+                        src="imgs/Hero/about1.png"
                         alt="about Us image"
                     />
                     </div>
@@ -88,3 +88,4 @@ function About() {
 }
 
 export default About;
+
