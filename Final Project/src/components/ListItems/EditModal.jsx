@@ -26,7 +26,7 @@ function EditModal({modal, setModal, product, setReload}) {
 
     const handleSubmit= async(e)=>{
         e.preventDefault()
-        await axios.put(`http://localhost:3000/products/${product.id}`, productEdited)
+        await axios.put(`https://68cd48bfda4697a7f3056db2.mockapi.io/api/shoppire/products/${product.id}`, productEdited)
         setReload(e=> !e)
         setModal(false)
         toast.success("Product is updated")
@@ -115,3 +115,4 @@ function EditModal({modal, setModal, product, setReload}) {
 }
 
 export default EditModal
+
