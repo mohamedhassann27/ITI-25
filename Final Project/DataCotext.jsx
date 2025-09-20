@@ -17,7 +17,7 @@ function DataProvider(props) {
     useEffect(()=>{
         const fetchData= async()=>{
             try{
-                let {data}= await axios.get("http://localhost:3000/products")
+                let {data}= await axios.get("https://68cd48bfda4697a7f3056db2.mockapi.io/api/shoppire/products")
                 setProducts(data)
             }catch(err){
                 console.log(err);
@@ -35,3 +35,4 @@ function DataProvider(props) {
 }
 
 export default DataProvider
+
