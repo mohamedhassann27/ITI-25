@@ -13,7 +13,7 @@ function ProductDetails() {
   useEffect(()=>{
     const fetchData= async()=>{
       try{
-        let {data}=await axios.get(`http://localhost:3000/products/${id}`)
+        let {data}=await axios.get(`https://68cd48bfda4697a7f3056db2.mockapi.io/api/shoppire/products/${id}`)
         setProduct(data)
       }catch(err){
         console.log(err);
@@ -142,3 +142,4 @@ function ProductDetails() {
 }
 
 export default ProductDetails;
+
