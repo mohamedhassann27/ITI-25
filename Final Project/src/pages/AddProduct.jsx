@@ -55,7 +55,7 @@ function AddProduct() {
                 return
             }
             
-            await axios.post("http://localhost:3000/products", newProduct)
+            await axios.post("https://68cd48bfda4697a7f3056db2.mockapi.io/api/shoppire/products", newProduct)
             toast.success("Add product success")
             navigate("/dashboard/list")
             setReload(e=>!e)
@@ -257,3 +257,4 @@ function AddProduct() {
 }
 
 export default AddProduct;
+
