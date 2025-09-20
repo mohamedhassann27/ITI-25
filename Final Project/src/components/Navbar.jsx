@@ -2,7 +2,7 @@ import { SiGooglehome } from "react-icons/si";
 import { BsCollectionFill } from "react-icons/bs";
 import { SiAtlassian } from "react-icons/si";
 import { SiMaildotcom } from "react-icons/si";
-import { NavLink, useNavigate } from "react-router";
+import { NavLink, Link,useNavigate } from "react-router";
 // import { FaRegCircleUser } from "react-icons/fa6";
 // import { CiShoppingCart } from "react-icons/ci";
 import { FaBasketShopping } from "react-icons/fa6";
@@ -56,7 +56,7 @@ function Navbar() {
                     </div>
                     <ul className="py-2" aria-labelledby="user-menu-button">
                         <li>
-                            <a href="" onClick={()=>navigate('/dashboard/add')} className="block px-4 py-2 text-sm text-gray-700 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Dashboard</a>
+                           <Link to="/dashboard/add" className="block px-4 py-2 text-sm text-gray-700 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Dashboard</Link>
                         </li>
                         {/* <li>
                             <a href="#" className="block px-4 py-2 text-sm text-gray-700 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Settings</a>
@@ -102,5 +102,6 @@ function Navbar() {
 }
 
 export default Navbar
+
 
 
