@@ -41,7 +41,7 @@ function ListItems() {
             confirmButtonText: "Yes, delete it!"
             }).then(async(result) => {
             if (result.isConfirmed) {
-                let {data}= await axios.delete(`http://localhost:3000/products/${product.id}`);
+                let {data}= await axios.delete(`https://68cd48bfda4697a7f3056db2.mockapi.io/api/shoppire/products/${product.id}`);
                 // console.log(data);
                 setProducts(prev=> prev.filter(p=> p.id !== data.id))
                 setReload((e)=>!e)
@@ -97,3 +97,4 @@ function ListItems() {
 }
 
 export default ListItems
+
