@@ -46,7 +46,7 @@ function Navbar() {
 
                 {!localStorage.getItem('token') && <button onClick={()=> navigate('/login')} className="btn bg-[var(--secondary)] py-2 px-5">Login</button>}
                 
-                {localStorage.getItem("token") && <img src="/public/imgs/admin/profile_img_3.png" alt="user img" onClick={()=> setUserMenuShow((show)=> !show)} className="text-gray-900 text-xl cursor-pointer dark:text-white w-9"/>}
+                {localStorage.getItem("token") && <img src="imgs/admin/profile_img_3.png" alt="user img" onClick={()=> setUserMenuShow((show)=> !show)} className="text-gray-900 text-xl cursor-pointer dark:text-white w-9"/>}
 
                 {/* <!-- Dropdown menu --> */}
                 {localStorage.getItem("token") && <div className={`${userMenuShow? 'absolute': 'hidden'} z-10 top-10 right-0 md:-right-10 md:top-9 text-base list-none bg-white divide-y divide-gray-100 rounded-lg shadow-sm dark:bg-gray-700 dark:divide-gray-600`} id="user-dropdown">
@@ -102,4 +102,5 @@ function Navbar() {
 }
 
 export default Navbar
+
 
