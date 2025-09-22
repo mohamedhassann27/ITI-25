@@ -25,7 +25,7 @@ function PopularProducts() {
                 data-aos="fade-up"
                 data-aos-delay={100*product.id}
                 key={product.id}
-                className="rounded-lg border border-gray-200 bg-white p-6 shadow-sm dark:border-gray-700 dark:bg-[#e7e7e9]"
+                className="rounded-lg border border-gray-200 bg-white p-6  max-md:p-4 shadow-sm dark:border-gray-700 dark:bg-[#e7e7e9]"
                 >
                 <div>
                     <img
@@ -114,3 +114,4 @@ function PopularProducts() {
 }
 
 export default PopularProducts;
+
