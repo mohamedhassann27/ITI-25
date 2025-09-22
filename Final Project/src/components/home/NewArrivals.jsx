@@ -17,7 +17,7 @@ function NewArrivals() {
         <div className="my-4 grid gap-8 sm:grid-cols-2 md:mb-8 lg:grid-cols-3 xl:grid-cols-4">
 
             {products.slice(0,4).map((product)=>(
-                <div data-aos="fade-up" data-aos-delay={100*product.id} key={product.id} className="rounded-lg border border-gray-200 bg-white p-6 shadow-sm dark:border-gray-700 dark:bg-[#e7e7e9]">
+                <div data-aos="fade-up" data-aos-delay={100*product.id} key={product.id} className="rounded-lg border border-gray-200 bg-white p-6  max-md:p-4 shadow-sm dark:border-gray-700 dark:bg-[#e7e7e9]">
                 <div>
                     <img src={product.image} alt="product" className=" w-full rounded h-80 object-cover"/>
                 </div>
@@ -143,3 +143,4 @@ function NewArrivals() {
 }
 
 export default NewArrivals;
+
