@@ -6,7 +6,6 @@ import { FaSearch } from "react-icons/fa";
 import axios from "axios";
 import { useContext, useEffect, useState } from "react";
 import { useNavigate } from "react-router";
-import { tr } from "zod/locales";
 import { DataCotext } from "../../DataCotext";
 
 function Collection() {
@@ -115,7 +114,7 @@ function Collection() {
                 Our Collection
             </h2>
             <div className="">
-                <div className="my-4 grid gap-5 sm:grid-cols-2 md:mb-8 lg:grid-cols-3 xl:grid-cols-4">
+                <div className="my-4 grid gap-5 grid-cols-1 sm:grid-cols-2 md:mb-8 lg:grid-cols-3 xl:grid-cols-4">
                 {products&& products.filter((product) =>  product.name.toLowerCase().includes(searchValue.toLowerCase()) && 
                     (
                         (   (product.category=='Men' && men) ||
@@ -224,3 +223,4 @@ function Collection() {
 }
 
 export default Collection;
+
