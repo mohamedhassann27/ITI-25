@@ -40,7 +40,7 @@ function Collection() {
 
     return (
         <div className="bg-[var(--primary)]">
-        <div className="flex max-md:flex-col gap-6 mx-15 max-md:mx-10 dark:mx-0 px-0 dark:px-15 bg-[var(--primary)] dark:bg-gray-900 py-10 max-md:py-5 min-h-screen ">
+        <div className="flex max-md:flex-col gap-6 mx-15 max-md:mx-7 dark:mx-0 px-0 dark:px-15 bg-[var(--primary)] dark:bg-gray-900 py-10 max-md:py-5 min-h-screen ">
 
             <div data-aos="fade-right" className="w-[18%] h-screen max-md:w-full max-md:h-full bg-white dark:bg-gray-900 border-0 dark:border dark:border-gray-500 py-5 rounded-md shadow-md ">
                 <div className="relative text-center p-3 mt-3 max-md:mt-0">
@@ -223,4 +223,5 @@ function Collection() {
 }
 
 export default Collection;
+
 
